@@ -1,9 +1,9 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import './ContactForm.css';
+
 const ContactForm = () => {
   const [state, handleSubmit] = useForm('mayzzgvq');
-
 
   if (state.succeeded) {
     return <p>Thanks for contacting us!</p>;
@@ -22,6 +22,21 @@ const ContactForm = () => {
         <ValidationError
           prefix="Email"
           field="email"
+          errors={state.errors}
+        />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="phone">Phone Number</label>
+        <input
+          id="phone"
+          type="tel"
+          name="phone"
+          className={`form-control ${state.errors.phone ? 'error' : ''}`}
+        />
+        <ValidationError
+          prefix="Phone"
+          field="phone"
           errors={state.errors}
         />
       </div>

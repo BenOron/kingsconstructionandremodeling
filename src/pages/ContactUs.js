@@ -15,8 +15,7 @@ const ContactUs = () => {
 
       <div>
         <h3>Call Phone</h3>
-        <a href={`tel:${phoneNumber}`}>Call</a>
-        <p>{phoneNumber}</p>
+        <a href={`tel:${phoneNumber}`}>(707) 418-8777</a>
         <h3>SMS Phone</h3>
         <a href={`sms:${phoneNumber}`}>SMS</a>
       </div>
