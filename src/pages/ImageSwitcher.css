@@ -1,0 +1,26 @@
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.fade-out ,.fade-in {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.fade-out ,.fade-in img {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  max-width: 400px;
+  border-radius: 5px;
+  border-radius: 5px;
+}

@@ -4,7 +4,7 @@ import './Home.css'; // Import the CSS file for styling
 import About from './About';
 import HomePage from './HomePage';
 import ContactUs from './ContactUs';
-import ImageGallery from './ImageGallery';
+import ServicesGallery from './ServicesGallery';
 
 const Home = () => {
   return (
@@ -34,7 +34,7 @@ const Home = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={
-            <ImageGallery />
+            <ServicesGallery />
           } />
           <Route path="/contact" element={
             <ContactUs />
